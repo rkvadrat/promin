@@ -1,3 +1,98 @@
+  
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&display=swap');
+
+* {
+    scroll-behavior: smooth;
+    
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Alegreya', serif;
+}
+
+.container {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header */
+
+header .container .navigations {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 5px;
+}
+
+@media (max-width: 660px) {
+header .container .navigations{
+        display: block;
+    }
+}
+
+
+header .container .top-menu .logo img {
+    width: 2rem;
+    height: 2rem;
+}
+
+header .container .navigations .top-menu {
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 1em;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+header nav .top-menu a {
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid transparent;
+    padding: 2px;
+    font-size: 25px;
+}
+
+header nav .top-menu a:hover {
+    border-bottom: 2px solid rgb(155, 224, 177);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .gallery {
 -webkit-column-count: 3;
 -moz-column-count: 3;
