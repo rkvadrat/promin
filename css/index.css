@@ -67,20 +67,65 @@ header nav .top-menu a {
 }
 
 header nav .top-menu a:hover {
-    border-bottom: 2px solid rgb(155, 224, 177);
+    border-bottom: 2px solid yellow;
 }
 
+header .container .navigations .menu {
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    padding: 1em;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
 
+/* main banner*/
 
+main section#banner {
+    background: url('../image/promin.jpg') no-repeat center top/cover;
+    height: 100vh;
+}
 
+/* main about */
+ main section#about .container {
+     display: flex;
+     flex-direction: column;
+   
+ }
 
+ main section#about h3 {
+     display: flex;
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding: 2em 0;
+    margin: 0;
+    text-align: center;
+    justify-content: flex-start;
+ }
 
+main section#about .container .boxes {
+    display: flex;
+    flex-direction: column;
+    
+}
 
-
-
-
-
-
+@media (min-width: 660px) {
+    main section#about .container .boxes {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+}
+ 
+main section#about .container .boxes .box2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
 
 
 
