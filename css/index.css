@@ -127,7 +127,22 @@ main section#about .container .boxes .box2 {
     align-content: center;
 }
 
+main section#about .container .boxpack {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 20px;
+        row-gap: 20px;
+}
 
+main section#about .container .boxpack .bp1 {
+    border-style: solid;
+  border-color: orange;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 
 
