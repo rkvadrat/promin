@@ -393,11 +393,50 @@ padding-right: 1.1rem;
 }
 }
 
-.userbox {
+/* .userbox {
  display: grid;
   grid-template-columns: 0.6fr 1.4fr;
   grid-template-rows: 1fr;
   column-gap: 10px;
   grid-template-areas: ". .";
   margin: 30px;
+} */
+
+main section#contact .container h3 {
+    display: flex;
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding: 2em 0;
+    margin: 0;
+    text-align: center;
+    justify-content: flex-start;
+
+}
+
+main section#contact .container .contacts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  column-gap: 10px;
+
+}
+
+main section#contact .container .contacts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  column-gap: 10px;
+
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+main section#contact .container .contacts img {
+    width: 30px;
+    height: 30px;
 }
