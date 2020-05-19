@@ -421,22 +421,38 @@ main section#contact .container .contacts {
 
 }
 
-main section#contact .container .contacts {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  column-gap: 10px;
-
+@media (max-width: 480px) {
+    main section#contact .container .contacts {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .social {
     display: flex;
     flex-direction: column;
-    
-
 }
 
 main section#contact .container .contacts img {
     width: 30px;
     height: 30px;
+}
+
+.social .adress {
+    font-size: 20px;
+    text-align: start;
+}
+
+.network {
+    margin-block-start: 20px;
+}
+
+.network a{
+    margin: 20px 20px 20px 20px;
+}
+
+footer .container p {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 0 0 0;
 }
