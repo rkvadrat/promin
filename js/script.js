@@ -11,3 +11,11 @@ $("#gallery").fadeTo(300, 1);
 });
 });
 
+var slideEl = $(".slide--parent");
+
+slideEl.flickity({
+	imagesLoaded: true,
+	wrapAround: true,
+	autoPlay: true,
+	pauseAutoPlayOnHover: false
+});

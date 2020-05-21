@@ -1,5 +1,5 @@
   
-@import url('https://fonts.googleapis.com/css2?family=Alegreya&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
 
 * {
     scroll-behavior: smooth;
@@ -8,7 +8,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Alegreya', serif;
+    font-family: 'Balsamiq Sans', cursive;
 }
 
 .container {
@@ -47,6 +47,7 @@ header .container .top-menu .logo img {
     height: 2rem;
 }
 
+
 header .container .navigations .top-menu {
     color: black;
     display: flex;
@@ -63,11 +64,16 @@ header nav .top-menu a {
     color: inherit;
     border: 1px solid transparent;
     padding: 2px;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 header nav .top-menu a:hover {
     border-bottom: 2px solid yellow;
+}
+
+header .container .navigations .top-menu .main-logo img {
+    width: 3rem;
+    height: 3rem;
 }
 
 header .container .navigations .menu {
@@ -456,3 +462,4 @@ footer .container p {
     justify-content: flex-end;
     margin: 0 0 0 0;
 }
+
