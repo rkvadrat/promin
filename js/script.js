@@ -19,3 +19,6 @@ slideEl.flickity({
 	autoPlay: true,
 	pauseAutoPlayOnHover: false
 });
+
+var image = document.getElementsByClassName('thumbnail');
+new simpleParallax(image);
