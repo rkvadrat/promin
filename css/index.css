@@ -4,6 +4,7 @@
 * {
     scroll-behavior: smooth;
     
+    
 }
 body {
     margin: 0;
@@ -101,9 +102,14 @@ header .container .navigations .menu a {
 /* main banner*/
 
 /* main about */
- main section#about .container {
+main section#about {
+background: url(../image/hot.png) no-repeat fixed;
+}
+
+main section#about .container {
      display: flex;
      flex-direction: column;
+     padding: 0;
    
  }
 
