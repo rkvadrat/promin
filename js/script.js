@@ -20,5 +20,5 @@ slideEl.flickity({
 	pauseAutoPlayOnHover: false
 });
 
-var image = document.getElementsByClassName('thumbnail');
-new simpleParallax(image);
+new WOW().init();
+
