@@ -28,11 +28,15 @@ a {
 }
 
 /* Header */
+header {
+    background: url('../image/prominnew.jpg') no-repeat center top/cover;
+    height: 100vh;
+}
 
 header .container .navigations {
     display: flex;
     flex-direction: column;
-    padding: 10px 5px;
+    padding: 10px 5px 0 0;
 }
 
 @media (max-width: 660px) {
@@ -81,18 +85,20 @@ header .container .navigations .menu {
     display: flex;
     justify-content: space-around;
     align-items: baseline;
-    padding: 1em;
+    padding: 10px 0 0 0;
     margin: 0;
     list-style-type: none;
+}
+
+header .container .navigations .menu a {
     text-decoration: none;
+    color: inherit;
+    border: 1px solid transparent;
+    padding: 2px;
+    font-size: 20px;
 }
 
 /* main banner*/
-
-main section#banner {
-    background: url('../image/prominnew.jpg') no-repeat center top/cover;
-    height: 100vh;
-}
 
 /* main about */
  main section#about .container {
