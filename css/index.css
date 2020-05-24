@@ -47,14 +47,16 @@ header {
 
 /* main about */
 main section#about {
-background: rgb(255,149,0);
-background: linear-gradient(90deg, rgba(255,149,0,1) 0%, rgba(253,198,29,0.5914740896358543) 50%, rgba(255,149,0,1) 100%);
+/* background: rgb(255,149,0);
+background: linear-gradient(90deg, rgba(255,149,0,1) 0%, rgba(253,198,29,0.5914740896358543) 50%, rgba(255,149,0,1) 100%); */
+background: white;
 }
 
 main section#about .container {
      display: flex;
      flex-direction: column;
      padding: 0;
+     
    
  }
 
@@ -86,11 +88,12 @@ main section#about .container .boxes {
 main section#about .container .boxes .box2 {
     display: flex;
     justify-content: center;
-    align-items: center;
+
     align-content: center;
 }
 main section#about .container .boxes .box2 img {
-    width: 100%
+    width: 100%;
+    border-radius: 10px;
 }
 
 main section#about .container .boxpack {
@@ -120,10 +123,15 @@ main section#about .container .boxpack {
 }
 }
 
+
+
+
+
 .bp {
     width: 200px;
     height: 200px;
     border: solid 10px orange;
+    border-radius: 10px;
     margin-top: 0;
     margin-bottom: 1rem;
     display: flex;
@@ -133,10 +141,21 @@ main section#about .container .boxpack {
     padding: 2em 0;
     text-align: center;
     justify-content: center;
+    text-indent: 0px;
+    -moz-transition: all 3s ease-out;
+-o-transition: all 3s ease-out;
+-webkit-transition: all 3s ease-out;
+cursor: pointer;
 }
 
 
-
+.bp:hover {
+background-color: rgb(252, 207, 125);
+color: #000;
+-webkit-transform: scale(1.5);
+-moz-transform: scale(1.5);
+-o-transform: scale(1.5);
+}
 
 
 
