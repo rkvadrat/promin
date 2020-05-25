@@ -130,8 +130,6 @@ main section#about .container .boxpack {
 .bp {
     width: 200px;
     height: 200px;
-    border: solid 10px orange;
-    border-radius: 10px;
     margin-top: 0;
     margin-bottom: 1rem;
     display: flex;
@@ -141,31 +139,32 @@ main section#about .container .boxpack {
     padding: 2em 0;
     text-align: center;
     justify-content: center;
-    text-indent: 0px;
-    -moz-transition: all 3s ease-out;
--o-transition: all 3s ease-out;
--webkit-transition: all 3s ease-out;
-cursor: pointer;
+    border: solid 10px orange;
+    border-radius: 5px;
+  clip-path: polygon( 
+    calc(0% + 5px) calc(0% + 5px), /* top left */
+    calc(100% - 5px) calc(0% + 5px), /* top right */
+    calc(100% - 5px) calc(100% - 5px), /* bottom right */
+    calc(0% + 5px) calc(100% - 5px) /* bottom left */
+  );
+  transition: clip-path 0.6s linear;
+  
 }
-
 
 .bp:hover {
-background-color: rgb(252, 207, 125);
-color: #000;
--webkit-transform: scale(1.5);
--moz-transform: scale(1.5);
--o-transform: scale(1.5);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
+
 
 
 
 
 /* workabout */
 
-main section#work {
+/* main section#work {
     background: rgb(255,149,0);
 background: linear-gradient(90deg, rgba(255,149,0,1) 0%, rgba(253,198,29,0.5914740896358543) 50%, rgba(255,149,0,1) 100%);
-}
+} */
 
  main section#work h3 {
     display: flex;
@@ -304,6 +303,23 @@ padding-right: 1.1rem;
 }
 }
 
+.img-fluid {
+    border-radius: 5px;
+    -moz-transition: all 3s ease-out;
+-o-transition: all 3s ease-out;
+-webkit-transition: all 3s ease-out;
+cursor: pointer;
+}
+
+.img-fluid:hover {
+
+-webkit-transform: scale(1.05);
+-moz-transform: scale(1.05);
+-o-transform: scale(1.05);
+
+}
+
+
 /* .userbox {
  display: grid;
   grid-template-columns: 0.6fr 1.4fr;
@@ -313,10 +329,10 @@ padding-right: 1.1rem;
   margin: 30px;
 } */
 
-main section.team {
+/* main section.team {
     background: rgb(255,149,0);
 background: linear-gradient(90deg, rgba(255,149,0,1) 0%, rgba(253,198,29,0.5914740896358543) 50%, rgba(255,149,0,1) 100%);
-}
+} */
 
 main section.team h3 {
     display: flex;
@@ -381,6 +397,10 @@ main section#contact .container .contacts img {
 
 .network a{
     margin: 20px 20px 20px 20px;
+}
+
+footer {
+    background: orange;
 }
 
 footer .container p {
