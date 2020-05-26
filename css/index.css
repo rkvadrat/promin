@@ -1,5 +1,5 @@
   
-@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Philosopher&display=swap');
 
 * {
     scroll-behavior: smooth;
@@ -9,7 +9,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Balsamiq Sans', cursive;
+    font-family: 'Philosopher', sans-serif;
 }
 
 .container {
@@ -216,7 +216,7 @@ main section#place .container {
 main section#place .container .box-meet h5 {
    font-size: 25px;
    text-transform: uppercase;
-   padding: 2em 0;
+   padding: 10px;
    margin: 0;
    display: flex;
    align-items: center;
