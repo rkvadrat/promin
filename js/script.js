@@ -12,17 +12,9 @@ new WOW().init();
 
 //
 
-// $('.sl').slick({
-//   infinite: true,
-//   slidesToShow: 3,
-//   slidesToScroll: 3,
-// });
-
-$(".sl").slick({
-  dots: true,
-  infinite: true,
-  speed: 300,
+$('.sl').slick({
   slidesToShow: 3,
-  centerMode: true,
-  variableWidth: true,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
 });
