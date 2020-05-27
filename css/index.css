@@ -38,6 +38,7 @@ header {
 
 .navbar-light .navbar-nav .nav-link {
     color: white;
+    font-size: 1.5rem;
 }
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
     color: yellow !important;
@@ -57,10 +58,10 @@ main section#about .container {
  }
 
  main section#about h3 {
-     display: flex;
-    font-size: 2rem;
+    display: flex;
+    font-size: 3rem;
     text-transform: uppercase;
-    padding: 2em 0;
+    padding: 2em 0 2em;
     margin: 0;
     text-align: center;
     justify-content: flex-start;
@@ -128,8 +129,8 @@ main section#about .container .boxpack {
     flex-direction: column;
     align-items: center;
     align-content: stretch;
-    font-size: 25px;
-    padding: 2em 0;
+    font-size: 2rem;
+    padding: 2em 0 2em;
     text-align: center;
     justify-content: center;
     border: solid 10px orange;
@@ -153,9 +154,9 @@ main section#about .container .boxpack {
 
 
 /* workabout */
- main section#work h3 {
+ /* main section#work h3 {
     display: flex;
-    font-size: 2rem;
+    font-size: 2em;
     text-transform: uppercase;
     padding: 1em 0;
     margin: 0;
@@ -188,7 +189,7 @@ main section#work .container .box2 {
     margin-block-end: 3em;
     text-align: center;
     justify-content: center;
-    font-size: 2rem;
+    font-size: 2em;
 }
 main section#work .container .box2 img{
     width: 100%;
@@ -202,19 +203,29 @@ main section#work .container .box3 {
     align-items: center;
     text-align: center;
     flex-direction: column;
-}
+} */
 
-/* Place */
+/* work */
 
-main section#place .container {
+main section#work .container h3 {
+    display: flex;
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding: 1em 0;
+    margin: 0;
+    text-align: center;
+    justify-content: flex-start;
+ }
+
+
+main section#work .container {
     display: flex;
     flex-direction: column;
     padding: 0; 
-    background: url('../image/icons/sun-shine.png') no-repeat center top/cover;
 }
 
-main section#place .container .box-meet h5 {
-   font-size: 25px;
+main section#work .container .box-meet h5 {
+   font-size: 2rem;
    text-transform: uppercase;
    padding: 10px;
    margin: 0;
@@ -223,15 +234,16 @@ main section#place .container .box-meet h5 {
    justify-content: center;
 }
 
-main section#place .container .box-meet {
+main section#work .container .box-meet {
    display: flex;
    flex-direction: column;
+   padding: 2em;
    
    
 }
 
 @media (min-width: 660px) {
-   main section#place .container .box-meet {
+   main section#work .container .box-meet {
        display: grid;
        grid-template-columns: repeat(2, 1fr);
        column-gap: 20px;
@@ -240,13 +252,19 @@ main section#place .container .box-meet {
    }
 }
 
-main section#place .container .box-meet .box1 {
+main section#work .container .box-meet .box1 {
    display: flex;
    justify-content: center;
-flex-direction: column;
+    flex-direction: column;
    align-content: center;
 }
-main section#place .container .box-meet .box2 img {
+
+main section#work .container .box-meet .box2 {
+    display: flex;
+    align-items: center;
+}
+
+main section#work .container .box-meet .box2 img {
    width: 100%;
    border-radius: 10px;
 }
@@ -256,9 +274,9 @@ main section#place .container .box-meet .box2 img {
 
 main section#galery .container h3 {
     display: flex;
-    font-size: 2rem;
+    font-size: 3rem;
     text-transform: uppercase;
-    padding: 2em 0;
+    padding: 2em 0 2em;
     margin: 0;
     text-align: center;
     justify-content: flex-start;
@@ -285,22 +303,47 @@ main section#galery .container img {
 
 /* Team */
 
+main section.team .slogan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main section.team .slogan img {
+    width: 320px;
+}
+
+main section.team .slogan p {
+    font-size: 2rem;
+   text-transform: uppercase;
+   padding: 2rem 0 2rem;
+   margin: 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
 main section.team h3 {
     display: flex;
-    font-size: 2rem;
+    font-size: 3rem;
     text-transform: uppercase;
-    padding: 2em 0;
+    padding: 2em 0 2em;
     margin: 0;
     text-align: center;
     justify-content: flex-start;
 }
 
+.slide--parent {
+    padding: 2rem;
+}
+
 /* Contact */
 main section#contact .container h3 {
     display: flex;
-    font-size: 2rem;
+    font-size: 3rem;
     text-transform: uppercase;
-    padding: 2em 0;
+    padding: 2em 0 2em;
     margin: 0;
     text-align: center;
     justify-content: flex-start;
