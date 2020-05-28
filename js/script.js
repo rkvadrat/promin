@@ -8,6 +8,32 @@ slideEl.flickity({
 });
 
 //
+
+const topItems = document.querySelectorAll('.show');
+const botItems = document.querySelectorAll('.hide');
+
+//Используем цикл forEach чтоб пройти по всем элемента массива(списка)
+topItems.forEach((item, i) =>{
+    item.addEventListener("click", function() {
+        // Тут делаем так чтоб при уходе с элемента класс также удалялся у соотв. эл. botItems
+        botItems[i].classList.toggle("active") 
+    })
+    
+})
+
+
+
+$(".show").on("click", function() {
+  var currentText = $(this).text();
+  if(currentText === "Показати менше"){
+      $('.hidden').show();
+      $(this).text("Показати більше");
+  } else {
+      $('.hidden').hide();
+      $(this).text("Показати менше");
+  };
+});
+//
 new WOW().init();
 
 //
@@ -47,3 +73,5 @@ $('.sl').slick({
     // instead of a settings object
   ]
 });
+
+
