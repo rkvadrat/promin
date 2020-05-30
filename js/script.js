@@ -1,21 +1,10 @@
-var slideEl = $(".slide--parent");
 
-slideEl.flickity({
-  imagesLoaded: true,
-  wrapAround: true,
-  autoPlay: true,
-  pauseAutoPlayOnHover: false,
-});
-
-//
 
 const topItems = document.querySelectorAll('.show');
 const botItems = document.querySelectorAll('.hide');
 
-//Используем цикл forEach чтоб пройти по всем элемента массива(списка)
 topItems.forEach((item, i) =>{
     item.addEventListener("click", function() {
-        // Тут делаем так чтоб при уходе с элемента класс также удалялся у соотв. эл. botItems
         botItems[i].classList.toggle("active") 
     })
     
@@ -24,7 +13,7 @@ topItems.forEach((item, i) =>{
 
 
 $(".show").on("click", function() {
-  var currentText = $(this).text();
+  const currentText = $(this).text();
   if(currentText === "Показати менше"){
       $('.hidden').show();
       $(this).text("Показати більше");
@@ -44,6 +33,7 @@ $('.sl').slick({
   speed: 300,
   slidesToShow: 3,
   slidesToScroll: 1,
+  arrows : false,
   responsive: [
     {
       breakpoint: 1024,
@@ -68,10 +58,18 @@ $('.sl').slick({
         slidesToScroll: 1
       }
     }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
+
   ]
 });
 
+//
 
+$('.tsl').slick({
+  dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  autoplay: true,
+  autoplaySpeed: 3000,
+  arrows : false,
+});

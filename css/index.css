@@ -33,8 +33,8 @@ a {
 
 /* Header */
 header {
-    background: url('../image/1.svg') no-repeat center top/cover;
-    height: 110vh;
+    background: rgb(239,237,197);
+    
 }
 
 /* bootstrap nav css */
@@ -51,6 +51,33 @@ header {
 }
 
 /* main banner*/
+
+main section#bnr {
+    background: url('../image/1.svg') no-repeat center top/cover;
+    height: 110vh;
+    display: flex;
+}
+
+main section#bnr .container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+
+/* // */
+@media (max-width: 900px) {
+    main section#bnr .container .slogan {
+        display: none;
+    }
+}
+
+main section#bnr .container .slogan {
+    font-size: 4rem;
+    width: 5em;
+    margin-top: 50px;
+}
 
 /* main about */
 main section#about {
@@ -105,6 +132,7 @@ main section#about .container .boxpack {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 30px;
     
 }
 
@@ -234,10 +262,9 @@ main section#work .container .box-meet .box2 img {
 /* gallery */
 
 main section#galery {
-    background: url('../image/444.svg') no-repeat center top/cover;
-    
-    
+    background: url('../image/444.svg') no-repeat center top/cover;   
 }
+
 main section#galery .container h3 {
     display: flex;
     font-size: 3rem;
@@ -257,41 +284,25 @@ main section#galery .container img {
     outline: none;
 }
 
-.slick-prev:before {
+/* .slick-prev:before {
     background: white;
-    /* content: '→'; contant: url("image/arrow-prev.png"); */
-}
+    content: '→'; contant: url("image/arrow-prev.png"); } */
 
-.slick-next:before {
+ /* .slick-next:before {
     background: white;
-    /* content: '→'; contant: url("image/arrow-next.png"); */
+   content: '→'; contant: url("image/arrow-next.png");
 }
 
 
 /* Team */
 
-main section.team .slogan {
+main section#team {
+    background: url('../image/222.svg') no-repeat center top/cover;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
-main section.team .slogan img {
-    width: 320px;
-}
 
-main section.team .slogan p {
-    font-size: 2rem;
-   text-transform: uppercase;
-   padding: 2rem 0 2rem;
-   margin: 0;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-}
-
-main section.team h3 {
+main section#team h3 {
     display: flex;
     font-size: 3rem;
     color: #DE950D;
@@ -302,14 +313,83 @@ main section.team h3 {
     justify-content: center;
 }
 
-.slide--parent {
-    padding: 2rem;
+/* team slider */
+main section#team .tsl {
+    display: flex;
+    justify-content: center;
+    
+}
+
+main section#team .tsl .slide h5 {
+    font-size: 2rem;
+    color: #DE950D;
+    text-transform: uppercase;
+    padding: 20px 0 20px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ main section#team .tsl .slide p {
+     text-align: center;
+ }
+
+main section#team .tsl .slide {
+display: flex!important;
+flex-direction: column;
+  align-items: center;
+  outline: none;
+}
+
+main section#team .tsl .slide img {
+    margin: 0 auto;
+    width: 50%;
+    border-radius: 50%;
+}
+
+main section#team .tsl .slide button {
+    display: inline-block;
+    width: 200px;
+    padding: 8px;
+    border: 1px solid #fff;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    transition: background-color 0.2s ease-out,
+    color 0.2s ease-out;
+}
+
+main section#team .tsl .slide button:hover,
+main section#team .tsl .slide button:active {
+    background-color: #fff;
+    transition: background-color 0.3s ease-in,
+              color 0.3s ease-in;
+}
+
+
+
+.hide {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.hidden {
+    display: none;
+    visibility: hidden;
 }
 
 
 
 
 /* Contact */
+
+main section#contact {
+    background: url('../image/333.svg') no-repeat center top/cover;
+}
 main section#contact .container h3 {
     display: flex;
     font-size: 3rem;
@@ -355,28 +435,11 @@ main section#contact .container .contacts img {
 
 
 footer {
-    background: orange;
+    background: rgb(239,237,197);
 }
 
 footer .container p {
     display: flex;
     justify-content: flex-end;
     margin: 0 0 0 0;
-}
-
-.hide {
-    display: none;
-}
-
-.active {
-    display: block;
-}
-
-.hidden {
-    display: none;
-    visibility: hidden;
-}
-
-.slide--parent {
-    height: auto;
 }
