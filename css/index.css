@@ -53,8 +53,8 @@ header {
 /* main banner*/
 
 main section#bnr {
-    background: url('../image/1.svg') no-repeat center top/cover;
-    height: 110vh;
+    background: url('../image/111.svg') no-repeat center top/cover;
+    height: 100vh;
     display: flex;
 }
 
