@@ -73,12 +73,37 @@ main section#bnr .container {
     }
 }
 
-main section#bnr .container .slogan {
-    font-size: 4rem;
+main section#bnr .container .slogan p {
+    font-size: 3rem;
     width: 5em;
-    margin-top: 50px;
 }
 
+main section#bnr .container .slogan .stb {
+    display: block;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 8px;
+  width: 80%;
+  max-width: 200px;
+  background: rgb(255,119,119);
+  font-family: 'Bad Script', cursive;
+  border-radius: 8px;
+  border-color: #542F05;
+  color: #542F05;
+  font-size: 2rem;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: all 0.3s ease-out;
+}
+
+main section#bnr .container .slogan .stb:hover,
+main section#bnr .container .slogan .stb:focus,
+main section#bnr .container .slogan .stb:active {
+  background: rgb(239,237,197);
+  color: orange;
+  transition: all 0.5s ease-in;
+}
 /* main about */
 main section#about {
     background: url('../image/222.svg') no-repeat center top/cover;
@@ -276,13 +301,19 @@ main section#galery .container h3 {
     justify-content: center;
 }
 
+main section#galery .container .sl .sl_slide{
+    outline: none;
+}
 
 main section#galery .container img {
     margin: 0 auto;
     width: 100%;
     border: 5px solid transparent;
-    outline: none;
+    outline: none;   
+    
 }
+
+
 
 /* .slick-prev:before {
     background: white;
@@ -383,7 +414,33 @@ main section#team .tsl .slide button:active {
 }
 
 
+main section#team .container .stb {
+    display: block;
+  box-sizing: border-box;
+  margin: 50px auto;
+  padding: 8px;
+  width: 80%;
+  max-width: 300px;
+  background: rgb(255, 215, 56);
+  font-family: 'Bad Script', cursive;
+  /* border-radius: 8px;
+  border-color: #542F05; */
+  border: none;
+  color: #542F05;
+  font-size: 2rem;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+}
 
+main section#team .container .stb:hover,
+main section#team .container .stb:focus,
+main section#team .container .stb:active {
+  background: white;
+  border: none;
+  color: orange;
+  transition: all 0.5s ease-in;
+}
 
 /* Contact */
 

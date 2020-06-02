@@ -34,6 +34,8 @@ $('.sl').slick({
   slidesToShow: 3,
   slidesToScroll: 1,
   arrows : false,
+  autoplay: true,
+  autoplaySpeed: 4000,
   responsive: [
     {
       breakpoint: 1024,
