@@ -78,7 +78,7 @@ main section#bnr .container .slogan p {
     width: 5em;
 }
 
-main section#bnr .container .slogan .stb {
+/* main section#bnr .container .slogan .stb {
     display: block;
   box-sizing: border-box;
   margin: 0 auto;
@@ -103,7 +103,8 @@ main section#bnr .container .slogan .stb:active {
   background: rgb(239,237,197);
   color: orange;
   transition: all 0.5s ease-in;
-}
+} */
+
 /* main about */
 main section#about {
     background: url('../image/222.svg') no-repeat center top/cover;
